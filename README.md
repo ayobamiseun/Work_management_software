@@ -1,9 +1,8 @@
 # Work_management_software
 
 #### project manager will be able to set task for staff 
-#### Staff will able to update  the task project 
-#### Work_management_software
-#### Work_management_software
+#### Staff will able to update  the task progress
+
 
 Features:
 - Login Page
