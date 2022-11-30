@@ -1,20 +1,34 @@
-# task_management
-<<<<<<< HEAD
+
 # Work_management_software
-=======
+=
 ### project manager will be able to set task for staff 
 ### Staff will able to update  the task project 
-
-===
+=
 ### Work_management_software
 ### Work_management_software
 
 Features:
 - Login Page
+- Admin Interface
 - Home Page
-- Project (CRUD Features)
+- Projects (CRUD Features)
 - Task List Page
-- Progress Form
+- Progress Details
 - Report Generation
 - User (CRUD Features)
+- Daily Mail Reminder (comins Soon)
+
+## Requirements 
+- PHP7
+- Xampp
+
+
+## How to setup
+- git clone the project into your xamp folder and lauch [http://localhost/work_management_software]
+- Create a database `workmanagement` import the file in /database/work.sql and click go to import the database infos.
+- To login as admin use [Email: admin@admin.com Password: admin123]
+
+
+
+
 
