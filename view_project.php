@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include './includes/connect.php';
 $stat = array("Pending","Started","On-Progress","On-Hold","Over Due","Done");
 $qry = $conn->query("SELECT * FROM project_list where id = ".$_GET['id'])->fetch_array();
 foreach($qry as $k => $v){

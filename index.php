@@ -4,7 +4,7 @@
 <?php 
 	if(!isset($_SESSION['login_id']))
 	    header('location:login.php');
-    include 'db_connect.php';
+    include './includes/connect.php';
     ob_start();
   if(!isset($_SESSION['system'])){
 
@@ -15,14 +15,14 @@
   }
   ob_end_flush();
 
-	include 'header.php'
+	include './includes/header.php'
   
 ?>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
  
-  <?php include 'sidebar.php' ?>
-  <?php include 'topbar.php' ?>
+  <?php include './includes/sidebar.php' ?>
+  <?php include './includes/topbar.php' ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -51,7 +51,7 @@
          <?php 
             $page = isset($_GET['page']) ? $_GET['page'] : 'home';
             if(!file_exists($page.".php")){
-                include '404.html';
+                include './includes/404.html';
             }else{
             include $page.'.php';
 
@@ -136,6 +136,6 @@
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <!-- Bootstrap -->
-<?php include 'footer.php' ?>
+<?php include './includes/footer.php' ?>
 </body>
 </html>

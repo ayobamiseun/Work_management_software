@@ -1,34 +1,5 @@
-<?php if(!isset($conn)){ include 'db_connect.php'; } ?>
-<?php
-function sanitizeinput($input){
+<?php if(!isset($conn)){ include './includes/connect.php'; } ?>
 
-    $input = trim($input);
-    
-    $input = stripslashes($input);
-    
-    $input = htmlspecialchars($input);
-
-    return $input;
-  
-    }  
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if(isset($_POST['Submit'])) {
-            //  if ($ && $checkemail ) {
-                $to = sanitizeinput($_POST['email']);
-                $name = sanitizeinput($_POST['name']);
-                $description = sanitizeinput($_POST['description']);
-                
-                mail($to, $title, $description);
-                
-            // }
-        }
-	} 
-	
-
-
-	
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,11 +89,11 @@ function sanitizeinput($input){
           	<div class="col-md-6">
 				<div class="form-group">
 					<label for="">Importance</label>
-					<!-- <select name="status" id="status" class="custom-select custom-select-sm">
+					<select name="status" id="status" class="custom-select custom-select-sm">
 						<option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>Most Important</option>
 						<option value="3" <?php echo isset($status) && $status == 3 ? 'selected' : '' ?>>slightly Important</option>
 						<option value="5" <?php echo isset($status) && $status == 5 ? 'selected' : '' ?>>Impotant</option>
-					</select> -->
+					</select>
 				</div>
 			</div>
 
@@ -204,7 +175,7 @@ function sanitizeinput($input){
               	<?php endwhile; ?>
               </select>
 				</div>
-			</div>
+		</div>
     	<div class="card-footer border-top border-info">
     		<div class="d-flex w-100 justify-content-center align-items-center">
     			<button class="btn btn-flat  bg-gradient-primary mx-2" name="Submit" form="manage-project">Save</button>

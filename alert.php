@@ -2,7 +2,7 @@
 <?php 
 	if(!isset($_SESSION['login_id']))
 	    header('location:login.php');
-    include 'db_connect.php';
+    include 'includes/connect.php';
     ob_start();
   if(!isset($_SESSION['system'])){
 
@@ -13,7 +13,7 @@
   }
   ob_end_flush();
 
-	include 'header.php'
+	include './includes/header.php'
   
 ?>
 
@@ -89,8 +89,8 @@
 }
 </style>
 <body>
- <?php include 'sidebar.php' ?>
-  <?php include 'topbar.php' ?>
+ <?php include './includes/sidebar.php' ?>
+  <?php include './includes/topbar.php' ?>
 <form id="helpdeskform" action="process.php" method="post" class="container-fluid">
     <fieldset class="field1 current">
          <h2>(Placeholder) Title of Form heading level 2</h2>

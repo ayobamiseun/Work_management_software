@@ -18,7 +18,7 @@ if(isset($_SESSION['login_id']))
 header("location:index.php?page=home");
 
 ?>
-<?php include 'header.php' ?>
+<?php include './includes/header.php' ?>
 <body class="hold-transition login-page bg-black">
 <div class="login-box">
   <div class="login-logo">
@@ -93,7 +93,7 @@ header("location:index.php?page=home");
   })
   })
 </script>
-<?php include 'footer.php' ?>
+<?php include './includes/footer.php' ?>
 
 </body>
 </html>

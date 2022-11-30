@@ -1,9 +1,9 @@
 <?php
 ob_start();
-date_default_timezone_set("Asia/Manila");
+date_default_timezone_set("Africa/Lagos");
 
 $action = $_GET['action'];
-include 'admin_class.php';
+include 'includes/admin_class.php';
 $crud = new Action();
 if($action == 'login'){
 	$login = $crud->login();

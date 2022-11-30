@@ -1,4 +1,4 @@
-<?php include 'db_connect.php' ?>
+<?php include './includes/connect.php' ?>
 <?php
 if(isset($_GET['id'])){
 	$type_arr = array('',"Admin","Project Manager","Employee");

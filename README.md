@@ -26,6 +26,7 @@ Features:
 ## How to setup
 - git clone the project into your xamp folder and lauch `http://localhost/work_management_software`
 - Create a database `workmanagement` import the file in `./database/work.sql` and click go to import the database infos.
+- Connect to your data base at `connect.php`
 - To login as admin use `Email: admin@admin.com Password: admin123`
 
 

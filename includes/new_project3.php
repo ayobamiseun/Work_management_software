@@ -1,4 +1,4 @@
-<?php if(!isset($conn)){ include 'db_connect.php'; } ?>
+<?php if(!isset($conn)){ include 'includes/connect.php'; } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
